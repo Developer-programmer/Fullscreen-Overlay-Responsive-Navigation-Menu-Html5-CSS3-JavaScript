@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive fullscreen overlay navigation menu built with HTML, CSS, and JavaScript."
+    />
+    <title>Northstar — Find your next adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Northstar home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>northstar<span class="brand-period">.</span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-menu"
+        aria-label="Open navigation menu"
+      >
+        <span class="menu-toggle-label">Menu</span>
+        <span class="menu-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> A little further, a little freer</p>
+          <h1 id="hero-title">Find your<br />next <em>somewhere.</em></h1>
+          <p class="hero-description">
+            Thoughtful journeys for the curious. Find a new perspective out
+            there.
+          </p>
+          <a class="text-link" href="#journeys">
+            Explore our journeys <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="hero-art" role="img" aria-label="Abstract sunset over a mountain landscape">
+          <div class="sun"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <span class="art-coordinate">45° 31' 12.0" N</span>
+          <span class="art-caption">Somewhere in the Dolomites</span>
+        </div>
+        <div class="hero-index" aria-hidden="true">01 <span>/ 04</span></div>
+      </section>
+
+      <section class="below-fold" id="journeys" aria-label="Our approach">
+        <span>01 — Go with intention</span>
+        <span>02 — Leave room for wonder</span>
+        <span>03 — Come back changed</span>
+      </section>
+
+      <section class="story-section" id="journal" aria-labelledby="journal-title">
+        <p class="eyebrow"><span></span> Notes from the road</p>
+        <h2 id="journal-title">A collection of<br /><em>somewhere.</em></h2>
+        <p>Field notes, favorite places, and small reminders to keep exploring.</p>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow"><span></span> Your next chapter starts here</p>
+          <h2 id="contact-title">Let's find your<br /><em>somewhere.</em></h2>
+        </div>
+        <a href="mailto:hello@northstar.example">Tell us what you're dreaming of <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <nav class="menu-overlay" id="site-menu" aria-label="Main navigation" inert>
+      <div class="overlay-topline">
+        <span>Take the scenic route</span>
+        <span>EST. 2018 — EVERYWHERE</span>
+      </div>
+
+      <div class="overlay-content">
+        <div class="overlay-links">
+          <a href="#home"><span class="link-number">01</span>Home</a>
+          <a href="#journeys"><span class="link-number">02</span>Journeys</a>
+          <a href="#journal"><span class="link-number">03</span>Journal</a>
+          <a href="#contact"><span class="link-number">04</span>Contact</a>
+        </div>
+        <aside class="overlay-note">
+          <span class="eyebrow">The world is wide open</span>
+          <p>Good things happen when you take the longer way around.</p>
+          <a href="#journeys">See where we can take you <span aria-hidden="true">↗</span></a>
+        </aside>
+      </div>
+
+      <div class="overlay-footer">
+        <span>© NORTHSTAR TRAVEL CO.</span>
+        <div class="social-links" aria-label="Social links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram ↗</a>
+          <a href="https://www.pinterest.com/" target="_blank" rel="noreferrer">Pinterest ↗</a>
+        </div>
+        <span>DESIGNED FOR THE DETOUR</span>
+      </div>
+    </nav>
+  </body>
+</html>
